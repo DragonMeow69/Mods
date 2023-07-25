@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Dancing+Script:wght@600&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+
+li, a, button {
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+}
+
+/* Остальные стили остаются без изменений */
+
+
+
+.Logo {
+  font-family: "Dancing Script";
+  font-weight: 300;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+}
+
+
+.Logo:hover{
+  transition: .5s;
+  color: grey;
+}
+
+
+
+
+
+.nav__links{
+  list-style: none;
+}
+
+.nav__links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a:hover{
+  transition: 0.5s;
+  color: grey;
+}
+
+
+.button__fst {
+  font-family: "Bacasime Antique";
+  font-size: 25px;
+  padding: 0 0.1px;
+  color: black;
+  display: inline-block;
+}
+.button__fst2 {
+  font-family: "Bacasime Antique";
+  font-size: 25px;
+  padding: 0 0.1px;
+  color: black;
+  display: inline-block;
+  cursor: auto;
+
+}
+.button__fst3 {
+  font-family: "Bacasime Antique";
+  font-size: 25px;
+  padding: 0 0.1px;
+  color: black;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.button__fst3:hover{
+  transition: .5s;
+  color: gray;
+}
+.button__fst:hover{
+  transition: .5s;
+  color: gray;
+}
+
+
+
+
+
+.container {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh; /* Adjust the height as needed */
+  background: white; /* Set the blue background color */
+  color: #fff; /* Set the text color */ /* Пример отступа слева, вы можете изменить значение по вашему усмотрению */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: black;
+  font-family: "Bacasime Antique";
+  font-weight: 300;
+  font-size: 50px;
+  margin-bottom: 2px;
+  background: none;
+  padding-left: 200px;
+
+}
+.title2 {
+  font-family: "Dancing Script";
+  color: grey;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 2px;
+  background: none;
+  margin-left: 300px;
+}
+
+.button__sec button{
+  margin-top: 20px;
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  padding: 9px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s; /* Добавляем отступ слева для кнопки */
+  margin-left: 300px;
+}
+
+.button__sec button span{
+  background: none;
+  font-family: "Bacasime Antique";;
+  font-size: 30px;
+  background: none;
+  color: whitesmoke;
+  padding: 0px 20px;
+}
+
+.button__sec button:hover{
+  transition: 1s;
+  background-color: gray;
+}
+
+
+
+.Coffee_img {
+  margin-left: 800px;
+  position: absolute;
+  z-index: 2;
+}
+
+
+.Coffee_img img{
+  height: 450px;
+  width: 550px;
+}
+
+
+
+
+.bb{
+  display: block;
+  width: 100%;
+  justify-content: center;
+  background-image: url(img/zrn.png);
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.bb h2{
+  text-align: center;
+  font-family: "Dancing Script";
+  font-weight: 200px;
+  color: rgb(243, 208, 127);
+  font-size: 50px;
+}
+.bb h1{
+  text-align: center;
+  font-family: monospace;
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+
+.menu{
+  padding-bottom: 5em;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.menu_ul{
+  list-style: none;
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
+.menu_bet{
+  border-right: 1px solid grey;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_bet:hover{
+  transition: 1s;
+  color: white;
+  background-color: grey;
+}
+.menu_bet2{
+  border-right: 1px solid black;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_bet2:hover{
+  transition: 1s;
+  color: white;
+  background-color: grey;
+}
+.menu_end{
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 15px 15px 0;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_end:hover{
+  transition: 1s;
+  color: white;
+  background-color: grey;
+}
+.menu_str.is-active{
+  border-right: 1px solid black;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 0 0 15px;
+  background-color: grey;
+  padding: 10px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.cards{
+  margin-left: 21em;
+  cursor: pointer;
+  justify-content: center;
+  display: block;
+  flex-wrap: wrap;
+  position: relative;
+  width: calc(100% /3);
+  padding-top: 50px;
+  opacity: 0;
+}
+
+.cards.element-show{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.All_cards{
+  display: flex;
+  position: relative;
+  width: calc(100% /3);
+  width: 200px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+
+
+.All_cards img{
+  width: 200px;
+  height: 200px;
+}
+
+.cardd{
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 30px 30px;
+  height: 45px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.cardd h1{
+  color: red;
+  position: absolute;
+  font-size: 20px;
+  padding-top: 16px;
+  margin-right: 100px;
+}
+
+
+
+.card1, .card2, .card3, .card4 , .card5, .card6, .card7 , .card8, .card9{
+  flex-wrap: wrap;
+  border-radius: 30px;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 80px;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover, .card8:hover, .card9:hover {
+  transition: .3s;
+  box-shadow: 0px 2px 20px 0px rgb(20, 220, 255);
+}
+
+.All_cards a{
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+
+.All_cards button{  
+  background-color: #fff;
+  border: none;
+  color: black;
+}
+
+.All_cards span:hover{
+  transition: .5s;
+  color: grey;
+}
+
+
+
+.menu_ending{
+  padding-bottom: 5em;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+
+
+.menu_list{
+  padding-bottom: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.menu_list_all{
+  list-style: none;
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.menu_list2{
+  border-right: 1px solid grey;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_list2:hover{
+  transition: 1s;
+  color: white;
+  background-color: grey;
+}
+.menu_list3{
+  border-right: 1px solid black;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_list3:hover{
+  transition: 1s;
+  color: white;
+  background-color: grey;
+}
+
+.menu_list4{
+  border-right: 1px solid black;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_list4:hover{
+  transition: 1s;
+  color: white;
+  background-color: grey;
+}
+
+.menu_listt{
+  border-right: 1px solid black;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_listt:hover{
+  transition: 1s;
+  color: white;
+  background-color: grey;
+}
+.menu_list7{
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 15px 15px 0;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_list7:hover{
+  transition: 1s;
+  color: white;
+  background-color: grey;
+}
+.menu_list1.is-active{
+  border-right: 1px solid black;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 0 0 15px;
+  background-color: grey;
+  padding: 20px;
+  font-family: Bacasime Antique;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.listsec{
+  border: 1px solid #edeee2;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 30em;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+
+.text h2{
+  padding: 50px;
+  font-size: 50px;
+  font-family: Dancing Script;
+  color: gold;
+}
+
+.list{
+  justify-content: space-around;
+  display: flex;
+  padding: 20px;
+}
+
+.list h1{
+  padding-top: 10px;
+  display: flex;
+  font-size: 40px;
+  font-family: "Dancing Script";
+  color: gold;
+  justify-content: center;
+}
+.list h1:hover{
+  transition: 0.5s;
+  text-shadow: 0.6px 0.5px 4px gold;
+}
+
+.list p {
+  width: 300px;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Bacasime Antique";
+  font-size: 20px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  border-radius: 40px;
+  border: 1px solid #edeee2;
+}
+.circle:hover{
+  transition: .5s;
+  border: none;
+}
+
+.circle img{
+  z-index: 2;
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  border: 1px solid #edeee2;
+}
+.circle img:hover{
+  transition: .5s;
+  border: none;
+  box-shadow: 10px 10px 20px 20px rgba(91, 230, 255, 0.104);
+}
+
+.passage_line {
+  position: relative;
+}
+
+.passage_line:before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  background: #edeee2;
+  height: 1px;
+  left: 50%;
+  top: 42px;
+  transform: translateX(-50%);
+}
+
+
+.burger{
+  display: none;
+}
+
+
+.line{
+  background-color: grey;
+  width: 1px;
+}
+
+.Roles{
+  padding-top: 60px;
+  display: flex;
+  width: 100%;
+  height: 20em;
+  padding-bottom: 10px;
+}
+
+.Role_sec1{
+  border-radius: 30px;
+  color: black;
+  background: #F1F1F1;
+  padding: 40px;
+  display: inline-block;
+  width: 50%;
+}
+.Role_sec2{
+  border-radius: 30px;
+  color: black;
+  background: #ffcece;
+  padding: 40px;
+  display: inline-block;
+  width: 50%;
+}
+.Role_sec1 img{
+  border-radius: 100%;
+  position: absolute;
+  height: 75px;
+  width: 75px;
+}
+.Role_sec2 img{
+  border-radius: 100%;
+  position: absolute;
+  height: 75px;
+  width: 75px;
+}
+
+.Role_sec2 img:hover, .Role_sec1 img:hover{
+  transition: .3s;
+  height: 77px;
+  width: 77px;
+  box-shadow: 10px 10px 20px 20px rgba(91, 230, 255, 0.104);
+}
+
+.Role_sec1 p{
+  text-align: center;
+  font-family: Bacasime Antique;
+  font-size: 19px;
+}
+.Role_sec2 p{
+  text-align: center;
+  font-family: Bacasime Antique;
+  font-size: 19px;
+}
+
+.Role_sec1 h1{
+  padding-top: 24px;
+  margin-left: 3.4em;
+}
+.Role_sec2 h1{
+  padding-top: 24px;
+  margin-left: 3.4em;
+}
+
+.Role_sec1 h2{
+  font-family: Bacasime Antique;
+  margin-left: 4.4em;
+  display: flex;
+  color: grey;
+  font-size: 19px;
+  padding-bottom: 30px;
+}
+.Role_sec2 h2{
+  font-family: Bacasime Antique;
+  margin-left: 4.4em;
+  display: flex;
+  color: grey;
+  font-size: 19px;
+  padding-bottom: 30px;
+}
+
+
+.lll{
+  border: 1px solid #e8ebc6;
+  font-family: "Dancing Script";
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+footer{
+  margin-top: auto;
+}
+
+.footer{
+  border-top: 1px solid grey;
+  padding-top: 2em;
+  background-color: #edeee2;
+  padding-bottom: 10px;
+}
+
+
+
+.Allf{
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.f1 h2{
+  font-family: monospace;
+  padding-left: 90px;
+}
+
+.f1 h2, .f2 h2, .f3 h2{
+  cursor: pointer;
+  padding-bottom: 10px;
+  font-family: "Dancing Script";
+  font-size: 30px;
+}
+.f1 h2:hover, .f2 h2:hover, .f3 h2:hover{
+  transition: .3s;
+  color: grey;
+}
+
+.f3 h2{
+  padding-left: 10px;
+}
+
+.f3 p{
+  display: flex;
+  justify-content: center;
+  font-family: Bacasime Antique;
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+
+.f3 a{
+  font-family: Bacasime Antique;
+  font-size: 19px;
+}
+.f3 a:hover{
+  transition: .3s;
+  color: grey;
+}
+
+
+.f1 address{
+  cursor: pointer;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.f1 address:hover{
+  transition: .2s;
+  color: grey;
+}
+
+.f2 p{
+  font-family: Bacasime Antique;
+  font-size: 19px;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 10px;
+}
+.f2 p:hover{
+  transition: .2s;
+  color: grey;
+}
+
+.pravo{
+  font-family: Bacasime Antique;
+  font-size: 9px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pravo span{
+  text-decoration: underline;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1400px) {
+
+  .menu_ul li a{
+    font-size: 50px;
+  }
+  .menu_str.is-active {
+    font-size: 50px;
+  }
+
+  .bb{
+    width: 110%;
+  }
+
+  .burger{
+    margin: 59em;
+    justify-self: flex-end;
+    display: flex;
+    width: 220px;
+    height: 20px;
+  }
+
+
+  .nav__links{
+    display: none;
+  }
+
+  .button__fst, .button__fst2, .button__fst3{
+    display: none;
+  }
+
+  .button__fst3{
+    font-size: 30px;
+  }
+
+
+  header{
+    height: 100px;
+  }
+
+  .container {
+    height: 70em;
+  }
+
+  .Coffee_img img{
+    display: none;
+  }
+
+  .title2{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    padding-left: 250px;
+    padding-bottom: 30px;
+  }
+
+  .button__sec button{
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    padding: 20px 80px;
+    border-radius: 50px;
+  }
+  .button__sec button span{
+    font-size: 40px;
+  }
+
+  .menu_list1.is-active{
+    font-size: 30px;
+  }
+
+  .menu_list2, .menu_list3, .menu_list4, .menu_listt, .menu_list7, .menu_list1.is-active {
+    font-size: 50px;
+  }
+
+}
+
+
+.test{
+  padding-top: 100px;
+  height: 400px;
+}
+
+.test label{
+  font-family: "Dancing Script";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.test h1 {
+  display: inline;
+  padding: 10px;
+}
+
+.t2:hover ~ .t1 {
+  color: gold;
+}
+
