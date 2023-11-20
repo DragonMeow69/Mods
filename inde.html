@@ -17,13 +17,18 @@
       background: url('1.png') no-repeat;
   background-size: cover;
   background-position: 50% 100%;
-  animation: animation 60s infinite;
+
 
     }
 
+
+    .anime {
+      animation: animation 40s infinite;
+}
+
     @keyframes animation{
       0%{
-        background-position: 0% 100%;
+        background-position: 50% 100%;
       }
       50%{
         background-position: 100% 100%;
@@ -32,7 +37,6 @@
         background-position: 0% 100%;
       }
     }
-
     h1 {
       font-size: 2em;
       margin-bottom: 20px;
@@ -80,12 +84,14 @@
       setTimeout(updateTimer, 1000);
     }
   }
-  document.body.addEventListener('mousedown', ()=>{
-    document.body.style.animationPlayState = "running";
-  });
-  document.body.addEventListener('mouseup', ()=>{
-    document.body.style.animationPlayState = "paused";
-  });
+  document.body.addEventListener('dblclick', () => {
+  document.body.classList.add('anime');
+  console.log(true);
+});
+
+document.body.addEventListener('click', () => {
+  document.body.classList.remove('anime');
+});
   
   startTimer();
 </script>
