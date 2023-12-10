@@ -341,7 +341,7 @@ li {
   height: 24px;
   width: 24px;
   border-radius: 50%;
-  background-image: url("../img/unchecked.png");
+  background-image: url("../unchecked.png");
   background-size: cover;
   background-position: center;
   top: 10px;
@@ -358,7 +358,7 @@ li {
 .list-container li.checked::before {
   -webkit-animation: hi 1s forwards;
           animation: hi 1s forwards;
-  background-image: url("../img/checked.png");
+  background-image: url("../checked.png");
   background: #A78BFA;
 }
 .list-container2 li::before {
@@ -367,7 +367,7 @@ li {
   height: 24px;
   width: 24px;
   border-radius: 50%;
-  background-image: url("../img/unchecked.png");
+  background-image: url("../unchecked.png");
   background-size: cover;
   background-position: center;
   top: 10px;
@@ -384,7 +384,7 @@ li {
 .list-container2 li.checked::before {
   -webkit-animation: hi 1s forwards;
           animation: hi 1s forwards;
-  background-image: url("../img/checked.png");
+  background-image: url("../checked.png");
   background: #A78BFA;
 }
 
@@ -492,7 +492,7 @@ label {
 }
 
 .dayBtn.active-btn-day::before {
-  background-image: url(../img/checked.png);
+  background-image: url(../checked.png);
   background: rgba(137, 27, 227, 0.4980392157);
 }
 
@@ -502,7 +502,7 @@ label {
   height: 34px;
   width: 34px;
   border-radius: 50%;
-  background-image: url("../img/unchecked.png");
+  background-image: url("../unchecked.png");
   background-size: cover;
   background-position: center;
   top: 8px;
@@ -573,5 +573,4 @@ label {
     display: none;
   }
 }
-
 
