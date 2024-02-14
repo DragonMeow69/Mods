@@ -162,11 +162,21 @@ function WorkOutTest() {
   button.textContent = `>`
   btnSection.appendChild(button)
 
+
+  const buttonCopy = document.createElement('button')
+  buttonCopy.classList = ('task-btn-copy')
+  buttonCopy.textContent = `Copy results`
+  buttonCopy.style.display = 'none'
+  section.appendChild(buttonCopy)
+
+
   const buttonEnd = document.createElement('button')
   buttonEnd.classList = ('task-btn-end')
   buttonEnd.textContent = `End this workout`
   buttonEnd.style.display = 'none'
   section.appendChild(buttonEnd)
+
+
 
 
   let finalValue = 0
@@ -212,9 +222,10 @@ function WorkOutTest() {
 
     if (h1.textContent === "The end!") {
       buttonEnd.style.display = 'block'
+      buttonCopy.style.display = 'block'
       btnSection.style.display = 'none'
       input.style.display = 'none'
-      var outputText = DataInput.join('\n');
+      outputText = DataInput.join('\n');
       console.log(outputText);
       h1.textContent = outputText
     }
@@ -251,6 +262,18 @@ function WorkOutTest() {
     currentIndex = 0
     section.remove()
     mainPage()
+  })
+
+  buttonCopy.addEventListener('click', ()=> {
+    buttonCopy.textContent = 'Copied!'
+
+    navigator.clipboard.writeText(outputText).then(() => {
+      console.log('Text successfully copied to clipboard');
+    }).catch((err) => {
+      console.error('Unable to copy text to clipboard', err);
+    });
+
+    DataInput = []
   })
 }
 
