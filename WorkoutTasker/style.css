@@ -76,6 +76,7 @@ body{
 }
 
 .task-btn-end{
+  margin-top: 20px;
   font-size: 20px;
   padding: 40px;
   border-radius: 10px;
@@ -83,6 +84,16 @@ body{
   color: #fff;
   border: none;
   background-color: #6C3EB8;
+}
+
+.task-btn-copy{
+  font-size: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background-color: #9553ff;
 }
 
 .buttonStart{
